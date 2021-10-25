@@ -30,6 +30,7 @@
                 <input type="email" class="form-control" name='email' id="email" placeholder="Enter a email">
             </div>
             <button type="submit" class="btn btn-primary" name="create">Create</button>
+            <a href="read.php" class="link-primary">View</a>
         </form>
     </div>
 </body>
