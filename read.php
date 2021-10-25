@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="box">
-            <h4 class="display-4 text-center">Read</h4>
+            <h4 class="display-4 text-center">CRUD Operations</h4>
             <hr />
             <br>
             <?php if (isset($_GET['success'])) { ?>
@@ -44,7 +44,7 @@
                             $i++;
                         ?>
                             <tr>
-                                <th scope="row"><?php echo "$i" ?></th>
+                                <th scope="row"><?php echo $i ?></th>
                                 <td><?php echo $rows['name'] ?></td>
                                 <td><?php echo $rows['email'] ?></td>
                                 <td>
