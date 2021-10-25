@@ -43,7 +43,7 @@
                                 <td><?php echo $rows['name'] ?></td>
                                 <td><?php echo $rows['email'] ?></td>
                                 <td>
-                                    <a href="update.php?<?php echo $rows['id'] ?>" class="btn btn-success">Update</a>
+                                    <a href="update.php?id=<?php echo $rows['id'] ?>" class="btn btn-success">Update</a>
                                 </td>
                             </tr>
                         <?php } ?>
