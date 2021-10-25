@@ -22,6 +22,11 @@
                     <?php echo $_GET['success']; ?>
                 </div>
             <?php } ?>
+            <?php if (isset($_GET['error'])) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php echo $_GET['error']; ?>
+                </div>
+            <?php } ?>
             <?php if (mysqli_num_rows($result)) { ?>
                 <table class="table table-striped">
                     <thead>
@@ -44,6 +49,7 @@
                                 <td><?php echo $rows['email'] ?></td>
                                 <td>
                                     <a href="update.php?id=<?php echo $rows['id'] ?>" class="btn btn-success">Update</a>
+                                    <a href="php/delete.php?id=<?php echo $rows['id'] ?>" class="btn btn-danger">Danger</a>
                                 </td>
                             </tr>
                         <?php } ?>
